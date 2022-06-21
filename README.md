@@ -1,6 +1,6 @@
 
 =======
-![Logo](https://oshawalibrary.website/onlinelibrary)
+![Logo](https://oshawalibrary.website/sites/default/files/styles/large/public/articles/Online-Library-Header.png?itok=zRqziQZU)
 
 
 # Specyfikacja - Timber
