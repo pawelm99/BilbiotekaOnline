@@ -2,12 +2,12 @@
 ![Logo](https://oshawalibrary.website/sites/default/files/styles/large/public/articles/Online-Library-Header.png?itok=zRqziQZU)
 
 
-# Specyfikacja - Timber
+# Specyfikacja Aplikacji
 
 ### 1. Wprowadzenie
 
 #### 1.1. Opis Systemu
-Celem jest utworzenie aplikacji, która umożliwi uzytkownikom korzystanie z książek(E-book). Aplikacja ma działać na zasadzie księgarni gdzie użytkownik może zakupić lub wypożyczyć swoją kopię produktu ale także składować swoje E-booki w formie biblioteczki. Po zakupie lub wypożyczeniu użytkownik ale także przeczytaniu zostanie nagrodzony odpowiednią ilość punktów które później będzie mógł wymienić na kody rabatowe(nie tylko obowiązujące w naszej aplikacji) lub nawet zakupić za te punkty kolejny produkt. Dla użykownika będzie również istniała możliwość wykupu subskrypcji w ramach której będzie otrzymywał co miesiąc darmowe kopie książek, po jej zakończeniu nadal będzie mógł z nich w pełni korzystać. Subksrypcja będzie obejmować grupy, każdy dodany do grupy będzie miał możliwość korzystania z biblioteki.
+Celem jest utworzenie aplikacji, która umożliwi użytkownikowi swobodne korzystanie z książek(E-book). Aplikacja umożliwi zakupienie oraz czytanie wybranych książek. Aplikacja będzie też pamiętać, na której stronie skończyliśmy czytanie oraz śledzić postępy.Postępy w czytaniu aplikacja nagradzać będzie użytkownika punktami, które może wykorzystać na różne sposoby np. kody rabatowe, subskrypcje można też śledzić postępy znajomych.  Subskrypcje umożliwiają dostęp do książek na określony czas. 
 
 #### 1.2. Słownik Pojęć
 
