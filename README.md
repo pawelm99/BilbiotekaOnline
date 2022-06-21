@@ -50,11 +50,11 @@ Celem jest utworzenie aplikacji, która umożliwi użytkownikowi swobodne korzys
 
 | Nazwa:| Użytkownik Niezalogowany <img width=1000/>                            |
 |:------|:----------------------------------------------------------------------|
-| Opis: |Użytkownik który nie zalogował sie lub nie wykreował swojego konta, ma <br> dostęp tylko do księgarni w której może przeglądać interesujące go książki.|
+| Opis: |Użytkownik który nie zalogował sie lub nie utworzył swojego konta, ma <br> dostęp tylko do biblioteki w której może przeglądać książki.|
 
 | Nazwa:| Użytkownik Zalogowany <img width=1000/>                                                  |
 |:------|:----------------------------------------------------------------------|
-| Opis: |Użytkownik który wykreował swoje konto ale także się zalogował ma pełny dostęp do oferowanej treśći.|
+| Opis: |Użytkownik który utworzył swoje konto ale także się zalogował ma pełny dostęp do treśći.|
 
 | Nazwa:| Subskrybent                 <img width=1000/>                                            |
 |:------|:----------------------------------------------------------------------|
