@@ -7,8 +7,8 @@
 ### 1. Wprowadzenie
 
 #### 1.1. Opis Systemu
-Celem jest utworzenie aplikacji, która umożliwi użytkownikowi swobodne korzystanie z książek(E-book). Aplikacja umożliwi zakupienie oraz czytanie wybranych książek. Aplikacja będzie też pamiętać, na której stronie skończyliśmy czytanie oraz śledzić postępy.Postępy w czytaniu aplikacja nagradzać będzie użytkownika punktami, które może wykorzystać na różne sposoby np. kody rabatowe, subskrypcje można też śledzić postępy znajomych.  Subskrypcje umożliwiają dostęp do książek na określony czas. 
-
+Celem jest utworzenie aplikacji, która umożliwi użytkownikowi swobodne korzystanie z książek(E-book). Aplikacja umożliwi zakupienie oraz czytanie wybranych książek. Aplikacja będzie też pamiętać, na której stronie skończyliśmy czytanie oraz śledzić postępy. Postępy w czytaniu aplikacja nagradzać będzie użytkownika punktami, które może wykorzystać na różne sposoby np. kody rabatowe, subskrypcje można też śledzić postępy znajomych.  Subskrypcje umożliwiają dostęp do książek na określony czas. 
+//Tutaj skonczylem
 #### 1.2. Słownik Pojęć
 
 -Użytkownik – osoba, która korzysta z programu/strony.
