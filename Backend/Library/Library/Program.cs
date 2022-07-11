@@ -6,6 +6,20 @@ using WebApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+// Add Policy Cors dla Api.
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("CORSPolicy", builder =>
+    {
+        builder.AllowAnyMethod()
+        .AllowAnyHeader()
+        .WithOrigins("http://localhost:3000", "https://appname.azurestaticapps.net");
+    });
+
+});
+
+
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -37,5 +51,8 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+//uzycie policy dla Api
+app.UseCors("CORSPolicy");
 
 app.Run();
