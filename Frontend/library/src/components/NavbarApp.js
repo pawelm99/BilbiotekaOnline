@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import {Nav, Navbar, NavDropdown} from 'react-bootstrap';
 
 
@@ -8,7 +8,7 @@ function NavbarApp() {
   return (
     <Navbar bg='dark' variant='dark' sticky='top' expand="lg">
     <Navbar.Brand>
-       App
+       Library
     </Navbar.Brand>
 
     <Navbar.Toggle/>
@@ -17,10 +17,7 @@ function NavbarApp() {
    
   
     <Nav>
-      <NavDropdown title ="Products">
-        <NavDropdown.Item href="products/tea">Tea</NavDropdown.Item>
-      </NavDropdown>
-
+      <Nav.Link as={Link} to={"/Books"} href = "Books">Books</Nav.Link>
     </Nav>
 
     </Navbar.Collapse>
