@@ -51,6 +51,7 @@ const [books,setBooks]=useState([]);
 <tbody>
     {books.map((book)=>(
         <tr key={book.id}>
+            <td>{book.id}</td>
             <td>{book.name}</td>
         </tr>
     ))}
