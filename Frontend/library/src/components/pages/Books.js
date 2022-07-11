@@ -7,7 +7,7 @@ const [books,setBooks]=useState([]);
 
 
     function getBooks(){
-        const url = 'http://localhost:5169/api/Books/';
+        const url = 'http://localhost:5169/Books';
         fetch(url,{
           method:'GET'
         })
@@ -23,12 +23,12 @@ const [books,setBooks]=useState([]);
       }
 
     const element = books.map(x=>{
-       return( <div> Email:{x.email}, Name: {x.name}</div>)
+       return( <div> Id:{x.id}, Name: {x.name}</div>)
     }
     )
 
 
-    console.log(books.isAvailable);
+   // console.log(books.isAvailable);
 
 
 
@@ -42,8 +42,8 @@ const [books,setBooks]=useState([]);
 <thead>
     <tr>
         
-        <th >Name</th>
-        <th>Image</th>
+        <th>Id</th>
+        <th>Name</th>
 
     </tr>
 </thead>
