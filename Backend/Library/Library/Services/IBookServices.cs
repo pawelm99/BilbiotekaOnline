@@ -6,7 +6,7 @@ namespace WebApi.Services
     {
         List<Book> GetBooks();
         Book GetBookById(string id);
-        Book Create(Book book);
+        Book Create(BookPost book);
         void Update(string id, Book book);
         void Delete(string id);
 

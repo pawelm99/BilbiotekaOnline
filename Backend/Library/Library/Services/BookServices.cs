@@ -21,8 +21,14 @@ namespace WebApi.Services
             return _books.Find(book => true).ToList();
         }
 
-        public Book Create(Book book)
+        public Book Create(BookPost bookPost)
         {
+            //Konwersja na byte z string
+            byte[] image = File.ReadAllBytes(bookPost.ImageString); 
+
+            //tutaj konwersja do img byte robimy
+            var book = new Book() { Id = bookPost.Id,Name=bookPost.Name,Image = image };
+
             _books.InsertOne(book);
             return book;
         }
