@@ -11,6 +11,10 @@ namespace WebApi.Models
         public string Id { get; set; } 
 
         [BsonElement("name")]
-        public string Name { get; set; } 
+        public string Name { get; set; }
+
+        [BsonElement("image")]
+        public byte[] Image { get; set; }
+
     }
 }
