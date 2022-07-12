@@ -37,6 +37,7 @@ const [books,setBooks]=useState([]);
 
 <div className='Books'>
     <form className='BooksForm'>
+   
 {(books.length>0) &&(
     <Table striped bordered hover variant="dark"  className='Table'>
 <thead>
@@ -44,18 +45,20 @@ const [books,setBooks]=useState([]);
         
         <th>Id</th>
         <th>Name</th>
-
+        <th>Image</th>
     </tr>
 </thead>
+
 
 <tbody>
     {books.map((book)=>(
         <tr key={book.id}>
             <td>{book.id}</td>
             <td>{book.name}</td>
+            <td><img className='imgHead' alt='Img' src={`data:image/jpeg;base64,${book.image}`} /></td>
         </tr>
+        
     ))}
-    
 </tbody>
 
 
