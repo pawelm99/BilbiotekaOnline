@@ -19,6 +19,7 @@ function NavbarApp() {
     <Nav>
       <Nav.Link as={Link} to={"/Books"} href = "Books">Books</Nav.Link>
       <Nav.Link as={Link} to={"/AddBook"} href = "AddBook">AddBook</Nav.Link>
+      <Nav.Link as={Link} to={"/Cards"} href = "Cards">Cards</Nav.Link>
     </Nav>
 
     </Navbar.Collapse>

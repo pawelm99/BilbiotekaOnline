@@ -7,7 +7,7 @@ import NavbarApp from './components/NavbarApp';
 
 import Books from './components/pages/Books';
 import AddBook from './components/pages/AddBook';
-
+import Cards from './components/pages/Cards';
 function App() {
   return (
     <>
@@ -16,6 +16,8 @@ function App() {
         <Routes>
         <Route path="/Books" element={<Books  />} />
         <Route path="/AddBook" element={<AddBook  />} />
+        <Route path="/Cards" element={<Cards  />} />
+        
         </Routes>
       </Router>
     </>
