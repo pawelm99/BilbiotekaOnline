@@ -24,15 +24,18 @@ namespace WebApi.Services
 
         public Book Create(BookPost bookPost)
         {
-            
-            //Konwersja na byte z string
-       //     byte[] image = File.ReadAllBytes(bookPost.ImageString); 
+            using (var ms = new MemoryStream())
+            {
 
-            //tutaj konwersja do img byte robimy
-            var book = new Book() { Id = ObjectId.GenerateNewId().ToString(),Name ="sadas",Image = null };
+                bookPost.FormFile.CopyTo(ms);
 
-            _books.InsertOne(book);
-            return book;
+                var image = ms.ToArray();
+
+                var book = new Book(ObjectId.GenerateNewId().ToString(),bookPost.Name,image,bookPost.FileName);
+                _books.InsertOne(book);
+                return book;
+
+            }
         }
 
 

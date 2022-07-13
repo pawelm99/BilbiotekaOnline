@@ -36,6 +36,7 @@ function AddBook() {
         e.preventDefault();
        
         const form = new FormData();
+        form.append("name",formData.name)
         form.append("formFile",file);
         form.append("fileName",fileName);
 
@@ -62,10 +63,24 @@ function AddBook() {
   
   return (
 
-  <>
-  <input type="file" onChange ={handleChangeFile}/>
-  <input type="button" value="upload" onClick={handleSubmit}/>
-  </>
+    <div className='BookCreate'>
+        <form className='BookCreateForm'>
+            <h2>Add Book</h2>
+    <Form >
+  <Form.Group className="mb-3" controlId="formBasicName">
+    <Form.Label>Name</Form.Label>
+    <Form.Control value={formData.name} onChange={handleChange} type="text" name='name' placeholder="Name" />
+  </Form.Group>
+  <Form.Group className="mb-3" controlId="formFile">
+        <Form.Label>Default file input example</Form.Label>
+        <Form.Control type="file" onChange={handleChangeFile}   />
+  </Form.Group>
+  <Button onClick={handleSubmit} variant="primary" type="submit">
+    Submit
+  </Button>
+</Form>
+</form>
+</div>
   )
 }
 
