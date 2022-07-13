@@ -1,4 +1,5 @@
-﻿using MongoDB.Driver;
+﻿using MongoDB.Bson;
+using MongoDB.Driver;
 using WebApi.Interface;
 using WebApi.Models;
 
@@ -23,11 +24,12 @@ namespace WebApi.Services
 
         public Book Create(BookPost bookPost)
         {
+            
             //Konwersja na byte z string
-            byte[] image = File.ReadAllBytes(bookPost.ImageString); 
+       //     byte[] image = File.ReadAllBytes(bookPost.ImageString); 
 
             //tutaj konwersja do img byte robimy
-            var book = new Book() { Id = bookPost.Id,Name=bookPost.Name,Image = image };
+            var book = new Book() { Id = ObjectId.GenerateNewId().ToString(),Name ="sadas",Image = null };
 
             _books.InsertOne(book);
             return book;

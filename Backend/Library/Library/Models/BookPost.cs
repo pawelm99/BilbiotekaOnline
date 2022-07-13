@@ -5,14 +5,11 @@ namespace WebApi.Models
 {
     public class BookPost
     {
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string Id { get; set; }
-
+/*
         [BsonElement("name")]
-        public string Name { get; set; }
+        public string Name { get; set; }*/
 
-        [BsonElement("image")]
-        public string ImageString { get; set; }
+        public string FileName { get; set; }
+        public IFormFile FormFile { get; set; }
     }
 }

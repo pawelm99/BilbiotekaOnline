@@ -38,11 +38,11 @@ namespace WebApi.Controllers
 
         // POST api/<BooksController>
         [HttpPost]
-        public ActionResult<Book> Post([FromBody] BookPost bookPost)
+        public ActionResult<Book> Post([FromForm] BookPost bookPost)
         {
             bookServices.Create(bookPost);
 
-            return CreatedAtAction(nameof(Get), new { id = bookPost.Id }, bookPost);
+            return Ok();
         }
 
         // PUT api/<BooksController>/5

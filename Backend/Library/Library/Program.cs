@@ -12,6 +12,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("CORSPolicy", builder =>
     {
+        
         builder.AllowAnyMethod()
         .AllowAnyHeader()
         .WithOrigins("http://localhost:3000", "https://appname.azurestaticapps.net");
