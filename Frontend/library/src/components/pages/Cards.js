@@ -53,9 +53,11 @@ const element = books.map(book=>{
   return (
     
    
-   <div className='Cards'>
+   <div className='h1_text'>
+     <h1>BookShop</h1>
    <div class="container">
   <div class="row row-cols-4">
+   
   <Container>
   <Row xs={1} md={4}>
  

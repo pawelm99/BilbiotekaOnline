@@ -30,10 +30,10 @@ function NavbarApp() {
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                   <Nav className="justify-content-end flex-grow-1 pe-3">
-                    <Nav.Link href="#action1">Home</Nav.Link>
-                    <Nav.Link href="#action2">Link</Nav.Link>
+                    <Nav.Link href="/Cards">BookShop</Nav.Link>
+                    <Nav.Link href="/Login">Login</Nav.Link>
                     <NavDropdown
-                      title="Dropdown"
+                      title="Category"
                       id={`offcanvasNavbarDropdown-expand-xl`}
                     >
                       <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
