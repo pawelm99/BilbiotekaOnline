@@ -2,6 +2,12 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+import  './CardsStyle.css';
+
 function Cards() {
 
   const [books,setBooks]=useState([]);
@@ -25,8 +31,9 @@ function getBooks(){
   
 }
 const element = books.map(book=>{
-  return  <Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" src={`data:image/jpeg;base64,${book.image}`} />
+  return    <Col>
+        <Card style={{ width: '11rem' }}>
+  <Card.Img className='imageCard' variant="top" src={`data:image/jpeg;base64,${book.image}`} />
   <Card.Body>
     <Card.Title>{book.name}</Card.Title>
     <Card.Text>
@@ -36,19 +43,29 @@ const element = books.map(book=>{
     <Button variant="primary">Go somewhere</Button>
   </Card.Body>
 </Card>
+</Col>
+
+
+
 })
   return (
     
    
-   
+   <div className='Cards'>
    <div class="container">
   <div class="row row-cols-4">
-  {(books.length===0) &&(getBooks()) }
+  <Container>
+  <Row xs={1} md={4}>
+ 
+  {(books.length===0) &&(getBooks()) } 
+  
  {element}
+  </Row>
+    </Container>
 
   </div>
 </div>
-
+</div>
   );
   
 }
