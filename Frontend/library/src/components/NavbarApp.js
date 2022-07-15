@@ -1,31 +1,68 @@
-import React from 'react'
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import {Nav, Navbar, NavDropdown} from 'react-bootstrap';
-
+import Button from 'react-bootstrap/Button';
+  import Container from 'react-bootstrap/Container';
+  import Form from 'react-bootstrap/Form';
+  import Nav from 'react-bootstrap/Nav';
+  import Navbar from 'react-bootstrap/Navbar';
+  import NavDropdown from 'react-bootstrap/NavDropdown';
+  import Offcanvas from 'react-bootstrap/Offcanvas';
+  
+  
 
 
 function NavbarApp() {
-  return (
-    <Navbar bg='dark' variant='dark' sticky='top' expand="lg">
-    <Navbar.Brand>
-       Library
-    </Navbar.Brand>
-
-    <Navbar.Toggle/>
-    <Navbar.Collapse>
-
-   
   
-    <Nav>
-      <Nav.Link as={Link} to={"/Books"} href = "Books">Books</Nav.Link>
-      <Nav.Link as={Link} to={"/AddBook"} href = "AddBook">AddBook</Nav.Link>
-      <Nav.Link as={Link} to={"/Cards"} href = "Cards">Cards</Nav.Link>
-    </Nav>
-
-    </Navbar.Collapse>
-
-  </Navbar>
-  )
-}
+    return (
+      <>
+        
+          <Navbar key={'xl'} bg="light" expand={'xl'} className="mb-3">
+            <Container fluid>
+              <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
+              <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-xl`} />
+              <Navbar.Offcanvas
+                id={`offcanvasNavbar-expand-xl`}
+                aria-labelledby={`offcanvasNavbarLabel-expand-xl`}
+                placement="end"
+              >
+                <Offcanvas.Header closeButton>
+                  <Offcanvas.Title id={`offcanvasNavbarLabel-expand-xl`}>
+                    Offcanvas
+                  </Offcanvas.Title>
+                </Offcanvas.Header>
+                <Offcanvas.Body>
+                  <Nav className="justify-content-end flex-grow-1 pe-3">
+                    <Nav.Link href="#action1">Home</Nav.Link>
+                    <Nav.Link href="#action2">Link</Nav.Link>
+                    <NavDropdown
+                      title="Dropdown"
+                      id={`offcanvasNavbarDropdown-expand-xl`}
+                    >
+                      <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                      <NavDropdown.Item href="#action4">
+                        Another action
+                      </NavDropdown.Item>
+                      <NavDropdown.Divider />
+                      <NavDropdown.Item href="#action5">
+                        Something else here
+                      </NavDropdown.Item>
+                    </NavDropdown>
+                  </Nav>
+                  <Form className="d-flex">
+                    <Form.Control
+                      type="search"
+                      placeholder="Search"
+                      className="me-2"
+                      aria-label="Search"
+                    />
+                    <Button variant="outline-success">Search</Button>
+                  </Form>
+                </Offcanvas.Body>
+              </Navbar.Offcanvas>
+            </Container>
+          </Navbar>
+        
+      </>
+    );
+  }
+  
 
 export default NavbarApp

@@ -37,10 +37,12 @@ const element = books.map(book=>{
   <Card.Body>
     <Card.Title>{book.name}</Card.Title>
     <Card.Text>
-      Some quick example text to build on the card title and make up the
-      bulk of the card's content.
+      Autor: Brindefe
     </Card.Text>
-    <Button variant="primary">Go somewhere</Button>
+    <Card.Text>
+      Price: 100 zl
+    </Card.Text>
+    <Button variant="primary">Read more</Button>
   </Card.Body>
 </Card>
 </Col>
