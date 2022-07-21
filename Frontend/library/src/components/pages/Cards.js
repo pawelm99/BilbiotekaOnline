@@ -5,12 +5,15 @@ import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
+import {Link} from 'react-router-dom'
 import  './CardsStyle.css';
+import BookReadMore from './BookReadMore';
 
-function Cards() {
+
+function Cards(props) {
 
   const [books,setBooks]=useState([]);
+  const [bookClick,setBookClick]=useState();
 
 function getBooks(){
 
@@ -30,6 +33,15 @@ function getBooks(){
   
   
 }
+function ClickFunReadMore(book)
+{
+  console.log("hello Is me read more")
+  props.paramsFun(book.name)
+  
+
+}
+
+
 const element = books.map(book=>{
   return    <Col>
         <Card style={{ width: '11rem' }}>
@@ -41,8 +53,10 @@ const element = books.map(book=>{
     </Card.Text>
     <Card.Text>
       Price: 100 zl
-    </Card.Text>
-    <Button variant="primary">Read more</Button>
+    </Card.Text> 
+    <Link to="/BookReadMore">
+    <Button variant="primary" onClick={() => props.paramsFun(book)}>Read more</Button>
+    </Link>
   </Card.Body>
 </Card>
 </Col>
@@ -54,7 +68,7 @@ const element = books.map(book=>{
     
    
    <div className='h1_text'>
-     <h1>BookShop</h1>
+     <h3>Bestsellery</h3>
    <div class="container">
   <div class="row row-cols-4">
    
@@ -66,7 +80,7 @@ const element = books.map(book=>{
  {element}
   </Row>
     </Container>
-
+  
   </div>
 </div>
 </div>

@@ -16,7 +16,7 @@ function NavbarApp() {
         
           <Navbar key={'xl'} bg="light" expand={'xl'} className="mb-3">
             <Container fluid>
-              <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
+              <Navbar.Brand href="#">BestReads</Navbar.Brand>
               <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-xl`} />
               <Navbar.Offcanvas
                 id={`offcanvasNavbar-expand-xl`}
@@ -31,7 +31,20 @@ function NavbarApp() {
                 <Offcanvas.Body>
                   <Nav className="justify-content-end flex-grow-1 pe-3">
                     <Nav.Link href="/Cards">BookShop</Nav.Link>
-                    <Nav.Link href="/Login">Login</Nav.Link>
+                    <Nav.Link href="/AddBook">AddBooksAdmin</Nav.Link>
+                    <NavDropdown
+                      title="Strefa klienta"
+                      id={`offcanvasNavbarDropdown-expand-xl`}
+                    >
+                      <NavDropdown.Item href="/Login">
+                        Login
+                      </NavDropdown.Item>
+                      <NavDropdown.Divider />
+                      <NavDropdown.Item href="#action5">
+                        Rejestracja
+                      </NavDropdown.Item>
+                    </NavDropdown>
+
                     <NavDropdown
                       title="Category"
                       id={`offcanvasNavbarDropdown-expand-xl`}
