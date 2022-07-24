@@ -38,6 +38,7 @@ class App extends React.Component {
         <Route path="/Cards" element={<Cards  paramsFun={this.paramsFun.bind(this)}/>} />
         <Route path='/Login' element={<Login/>}/>
         
+        
         </Routes>
       </Router>
     </>

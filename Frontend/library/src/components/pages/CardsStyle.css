@@ -14,3 +14,19 @@
     width: 175px;
     height: 300px;
 }
+.Kategoria
+{   
+    margin: -3cm;
+    padding: -3cm;
+    margin-top: px;
+}
+.cat
+{
+    
+    padding: 6px;
+    margin-bottom: 1px;
+    margin-right: 100px;
+    text-align: left;
+    line-height: 1.2;
+    font-size: 14px;
+}
